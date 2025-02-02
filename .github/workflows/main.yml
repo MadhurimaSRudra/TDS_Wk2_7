@@ -1,5 +1,13 @@
+name: Test Action
+
+on:
+  push:
+    branches:
+      - main  # Trigger the workflow when changes are pushed to the main branch
+
 jobs:
   test:
+    runs-on: ubuntu-latest  # You can change the OS if needed
     steps:
       - name: 23f1000625@ds.study.iitm.ac.in
         run: echo "Hello, world!"
