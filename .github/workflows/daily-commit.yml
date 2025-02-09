@@ -14,7 +14,8 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Update Timestamp # Step with email in its name
-        run: echo "Last run: $(date)" > last_run.txt
+        run: |
+          echo "Last run: $(date)" > last_run.txt
 
       - name: Commit and Push Changes (23f1000625@ds.study.iitm.ac.in)
         run: |
